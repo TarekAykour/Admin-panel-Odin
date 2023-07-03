@@ -1,0 +1,300 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+   
+    
+    
+}
+
+
+/* aside */
+aside {
+    background: rgb(17, 17, 17);
+    color: white;
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+
+header h2 {
+    text-align: center;
+    border-bottom: solid 1px rgb(51, 51, 51);
+    width: 75%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+aside ul {
+    list-style: none;
+}
+
+.primary-aside-nav {
+    border-bottom: solid 1px rgb(51, 51, 51);
+  
+
+}
+
+.primary-aside-nav li {
+    padding: 5px;
+    
+}
+
+.link {
+    position: relative;
+    top: 10px;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item {
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    transform: scale(1);
+    transition: transform 300ms;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+    transition: transform 300ms;
+}
+
+
+.nav-item svg {
+    color: white;
+    height: 55px;
+}
+
+.nav-item path {
+    fill: white;
+}
+
+/* main */
+main {
+    width: 95%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .2fr 1fr;
+    margin-left: 25px;
+}
+
+nav {
+    box-shadow: 1px 1px 5px #c5c5c5;
+    height: 100px;
+    width: 75%;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+nav li {
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    
+}
+
+nav ul svg {
+    width: 35px;
+    position: relative;
+    top: 5px;
+    margin-right:5px;
+    margin-left: 5px;
+}
+
+.input-group {
+    margin: 25px;
+    display: flex;
+    max-height: 50px;
+    border-radius: 5px;
+    
+}
+
+.input-group input {
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px #c4c4c4;
+    width: 400px;
+}
+
+.input-group svg {
+    padding: 5px;
+    width: 35px;
+    text-align: center;
+    border: solid 1px #c4c4c4;
+    border-radius: 5px 0px 0px 5px;
+    float: right;
+    background: #ececec;
+}
+
+svg {
+    width: 25px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #c4c4c4;
+    margin: 5px;
+    
+}
+
+
+
+/* dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr .2fr;
+}
+
+.dashboard-stats-templates {
+    display: grid;
+}
+
+
+
+/* stats */
+.stats {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stats div {
+    width: 100%;
+    margin: 5px;
+    box-shadow: 1px 1px 5px rgb(190, 190, 190);
+    border-radius: 5px;
+    color: white;
+}
+
+.visitors {
+    text-align: center;
+    background: #9333ea;
+    position: relative;
+}
+
+.visitors span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    margin: 15px;
+}
+
+.budget {
+    text-align: center;
+    background: #22c55e;
+}
+
+.stats h2 {
+
+}
+
+
+/* templates */
+.templates {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 1fr;
+}
+.templates .project {
+    box-shadow: 1px 1px 5px rgb(190, 190, 190);
+    border-radius: 5px;
+    margin: 5px;
+    transform: scale(1);
+    transition: transform 300ms;
+    
+}
+
+.project p {
+    text-align: center;
+}
+
+.templates .project:hover {
+    transform: scale(1.01);
+    transition: transform 300ms;
+}
+
+.templates img {
+    width: 250px;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.website-name {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+
+.website-name a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* feed */
+.feed {
+    margin: 15px;
+    border-radius:5px;
+    box-shadow: 1px 1px 5px rgb(190, 190, 190);
+}
+.feed h2 {
+    text-align: center;
+    border-bottom: solid 1px rgb(190, 190, 190);
+    width: 75%;
+    margin: auto;
+    position: relative
+    ;
+    
+}
+.feed ul {
+    margin-top: -18px;
+    list-style: none;
+    text-align: center;
+ 
+    height: 100%;
+}
+
+.feed li {
+    text-align: center;
+    margin-right: 15px;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
